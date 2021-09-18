@@ -1,0 +1,84 @@
+:root {
+  --dark-gray-color: #404040;
+  --ligth-gray-color: #a1a1a6;
+  --more-light-color: #babbbf;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #ebedf2;
+}
+
+.main_container {
+  font-family: "Carattere", cursive;
+  margin: 25px auto;
+  width: 1200px;
+  font-size: 30px;
+  line-height: 1.5;
+  box-shadow: 10px 10px 35px -1px rgba(0, 0, 0, 0.432);
+}
+
+code {
+  font-size: 20px;
+}
+
+.columns {
+  display: flex;
+}
+
+.left-column {
+  width: 58%;
+  padding: 40px;
+}
+
+.right-column {
+  width: 42%;
+  color: var(--dark-gray-color);
+  background-color: var(--more-light-color);
+}
+
+header {
+  padding: 30px;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+header img {
+  margin-bottom: 1px;
+  border: 10px solid var(--more-light-color);
+  border-radius: 25px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 65px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: 5px;
+}
+
+header h2 {
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+main {
+  padding: 0 40px;
+}
+
+main h3 {
+  width: 135px;
+  margin: 40px auto 20px;
+  padding: 5px 20px;
+  background-color: var(--dark-gray-color);
+  text-align: center;
+  letter-spacing: 1px;
+  color: whitesmoke;
+  border-radius: 25px;
+}
+
+main .feedback h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  transform: translate(0, -50%);
+}
