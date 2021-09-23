@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carattere&display=swap"
+      rel="stylesheet"
+    />
+    <title>Rsschool-cv-html</title>
+  </head>
+  <body>
+    <div class="main_container">
+      <div class="columns">
+        <div class="left-column">
+          <section class="about-myself">
+            <div class="paragraph">
+              <img
+                src="./Images/me_icon_155139.png"
+                alt="about icon"
+                width="45"
+                height="45"
+              />
+              <h3>About myself</h3>
+            </div>
+            <p>
+              I'm a 3rd year student of the specialty "Informatics" of the Gomel
+              State Technical University named after P.O. Sukhoi. And I'm very
+              interested in Developing, because I'd like my works.
+            </p>
+            <p>
+              My father became very ill and our financial situation
+              deteriorated. For the last 2 years I have been trying to get my
+              family out of this, and becoming a programmer is one of the main
+              points on the way to this goal.
+            </p>
+          </section>
+          <section class="code_example">
+            <div class="paragraph">
+              <img
+                src="./Images/icons8-код-50.png"
+                alt="code-icon"
+                height="45"
+                width="45"
+              />
+              <h3>Code example</h3>
+            </div>
+            <pre><code>from tensorflow.keras.datasets import mnist
+from tensorflow.keras.models import Sequential, load_model
+from tensorflow.keras.layers import Dense
+from tensorflow.keras import utils
+import numpy as np
+             
+(x_train, y_train), (x_test, y_test) = mnist.load_data()
+             
+x_train = x_train.reshape(60000, 784)
+x_train = x_train / 255
+             
+y_train = utils.to_categorical(y_train, 10)
+              
+model = Sequential()
+model.add(Dense(200, input_dim = 784, activation = "relu"))
+model.add(Dense(10, activation = "softmax"))
+             
+model.compile(loss = "categorical_crossentropy", optimizer = "SGD",
+metrics = ["accuracy"])
+print(model.summary())
+              
+history = model.fit(x_train, 
+y_train,
+batch_size = 1000,
+epochs = 99,
+verbose = 1)
+              
+predictions = model.predict(x_train)
+print(np.argmax(predictions[0]))
+print(np.argmax(y_train[0]))
+             
+model.save("my_save_laba_3.h5")</code></pre>
+          </section>
+        </div>
+        <aside class="right-column">
+          <header>
+            <img
+              src="https://sun2.dataix-by-minsk.userapi.com/s/v1/ig2/0dyH8M7blUeL53P1fInHJrsJS8uJp3uNJ3toO8hoDzYfJgO-sodBGbNo9MUFrH0gGOYLbo9J8OYAbRThH95-njjM.jpg?size=200x200&quality=96&crop=1116,2,1437,1437&ava=1"
+              alt="Avatar"
+            />
+            <h1>Denis Tarelko</h1>
+            <h2>Beginner in the Front-end Developing</h2>
+          </header>
+          <main>
+            <section class="feedback">
+              <h3>Feedback</h3>
+              <ul>
+                <li>
+                  <img
+                    src="./Images/icons8-вконтакте-50.png"
+                    alt="VK icon"
+                    width="45"
+                    height="45"
+                  />
+                  <p>vk.com/tarelko_den</p>
+                </li>
+                <li>
+                  <img
+                    src="./Images/icons8-отправлено-50.png"
+                    alt="Telegram icon"
+                    width="45"
+                    height="45"
+                  />
+                  <p>@Live_for_fight</p>
+                </li>
+                <li>
+                  <img
+                    src="./Images/email-open-envelope-in-a-rounded-square_icon-icons.com_70497.png"
+                    alt="Email icon"
+                    width="45"
+                    height="45"
+                  />
+                  <p>tarelko_den@list.ru</p>
+                </li>
+                <li>
+                  <img
+                    src="./Images/icons8-телефон-50.png"
+                    alt="Phone icon"
+                    width="45"
+                    height="45"
+                  />
+                  <p>+375 (29) 611-84-34</p>
+                </li>
+              </ul>
+            </section>
+            <section class="skills">
+              <h3>Skills</h3>
+              <ul>
+                <li>C/C++/C#</li>
+                <li>Assembler</li>
+                <li>Java</li>
+                <li>HTML/CSS</li>
+                <li>Python</li>
+              </ul>
+            </section>
+            <section class="languages">
+              <h3>Languages</h3>
+              <ul>
+                <li>
+                  <p class="lang_name">English</p>
+                  <p>Intermediate</p>
+                </li>
+                <li>
+                  <p class="lang_name">Russian</p>
+                  <p>Native</p>
+                </li>
+                <li>
+                  <p class="lang_name">Belarusian</p>
+                  <p>Upper-intermediate</p>
+                </li>
+              </ul>
+            </section>
+          </main>
+        </aside>
+      </div>
+      <footer>
+        <a class="my_git" href="https://github.com/DenisKut">
+          <img
+            class="git_icon"
+            src="./Images/icons8-github-48.png"
+            alt="git-icon"
+            width="45"
+            height="45"
+          />
+          <p>Visit my GitHub</p>
+        </a>
+        <p class="date">@ 2021</p>
+        <a href="https://rs.school/js/">
+          <img
+            src="./Images/rs_school.svg"
+            alt="RSschool Icon"
+            width="83"
+            height="36"
+          />
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>

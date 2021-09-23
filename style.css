@@ -1,0 +1,201 @@
+:root {
+  --dark-gray-color: #404040;
+  --ligth-gray-color: #a1a1a6;
+  --more-light-color: #babbbf;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #ebedf2;
+}
+
+.main_container {
+  font-family: "Carattere", cursive;
+  margin: 25px auto;
+  width: 1200px;
+  font-size: 30px;
+  line-height: 1.5;
+  box-shadow: 10px 10px 35px -1px rgba(0, 0, 0, 0.432);
+}
+
+code {
+  font-size: 15px;
+}
+
+.columns {
+  display: flex;
+}
+
+.left-column {
+  width: 58%;
+  padding: 40px;
+}
+
+.right-column {
+  width: 42%;
+  color: var(--dark-gray-color);
+  background-color: var(--more-light-color);
+}
+
+header {
+  padding: 30px;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+header img {
+  margin-bottom: 1px;
+  border: 10px solid var(--more-light-color);
+  border-radius: 25px;
+}
+
+header h1 {
+  margin: 10px 0px;
+  font-size: 65px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: 5px;
+}
+
+header h2 {
+  margin: 20px 0px;
+  letter-spacing: 1px;
+}
+
+main {
+  padding: 0 40px;
+}
+
+main h3 {
+  width: 135px;
+  margin: 40px auto 20px;
+  padding: 5px 20px;
+  background-color: var(--dark-gray-color);
+  text-align: center;
+  letter-spacing: 1px;
+  color: whitesmoke;
+  border-radius: 25px;
+}
+
+main .feedback h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  transform: translate(0, -50%);
+}
+
+main li {
+  margin-bottom: 10px;
+}
+
+.feedback li img {
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.feedback li p {
+  display: inline;
+  vertical-align: middle;
+}
+
+.feedback a {
+  text-decoration: none;
+  color: var(--dark-gray-color);
+}
+
+main ul {
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+main :not(.feedback) ul {
+  list-style-type: circle;
+  margin-left: 60px;
+}
+
+.languages p {
+  margin: 10px 0px;
+}
+
+.lang_name {
+  font-weight: 750;
+}
+
+.left-column .paragraph {
+  display: flex;
+  margin: 15px 0px;
+}
+
+.left-column .about-myself .paragraph {
+  margin-top: 0px;
+}
+
+.about-myself p {
+  margin: 10px 30px;
+}
+
+.about-myself p:last-of-type {
+  margin-bottom: 0px;
+}
+
+.left-column {
+  padding: auto;
+}
+
+.left-column h3 {
+  flex: 1;
+  vertical-align: middle;
+  font-weight: 650;
+  letter-spacing: 1px;
+  color: var(--dark-gray-color);
+  border-bottom: 3px solid var(--dark-gray-color);
+  margin: 0px;
+}
+
+.left-column img {
+  vertical-align: middle;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+.left-column p {
+  color: var(--dark-gray-color);
+}
+
+pre {
+  margin: 0px 0px 0px 20px;
+  padding-left: 42px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.9em;
+  background-color: rgba(123, 144, 158, 0.205);
+  color: rgba(184, 125, 58, 0.979);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  font-size: 25px;
+  color: var(--dark-gray-color);
+  background-color: #8593a6;
+  height: 40px;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--dark-gray-color);
+}
+
+footer .git_icon {
+  margin-right: 10px;
+}
+
+.my_git {
+  display: flex;
+  align-items: center;
+}
+
+.date {
+  margin-right: 25px;
+}
